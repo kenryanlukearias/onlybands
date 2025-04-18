@@ -9,9 +9,11 @@
 
 ## How to access this project
 
-1. Clone this project via GitHUb Desktop
+1. Clone this project via GitHub Desktop
 
-## Developer Expectations
+## Contiributor Expectations
 
-1. Make sure not to commit into main before review
-2. Make sure to create your own branch when adding or changing code
+1. Make sure to first communicate before pushing into main
+2. Make sure to create your own branch before doing anything
+3. Make sure to comment your code
+4. Feel free to make suggestions
