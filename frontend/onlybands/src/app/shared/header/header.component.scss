@@ -1,0 +1,68 @@
+.main {
+    height: 4.6rem;
+    background-color: var(--secondary-color1);
+    position: sticky;
+}
+
+.hero {
+    margin: 4rem;
+}
+
+li {
+    margin: 2rem;  
+    color: #ffffff;
+
+    
+}
+
+li:hover {
+    cursor: pointer;
+    color: var(--main-color1);
+    transition: color 0.3s ease-in-out;
+}
+
+.logo {
+    display: flex;
+    color: var(--secondary-color2);
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+
+.button {
+    display: flex;
+    height: 3rem;
+    width: 8rem;
+    border-radius: 0.5rem;
+    background-color: var(--main-color1);
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: var(--secondary-color2);
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: var(--main-color2);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.menu {
+    color: var(--main-color1);
+}
+
+.menu:hover {
+    cursor: pointer;
+    color: var(--main-color2);
+    transition: color 0.3s ease-in-out;
+}
+
+// on mobile, navigation is in the sidebar menu. normal on pc size
