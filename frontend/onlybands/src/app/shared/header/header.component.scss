@@ -62,8 +62,28 @@ p {
     transition: color 0.3s ease-in-out;
 }
 
+@keyframes fadeInOut {
+    0% {
+        color: var(--main-color2);
+        transform: translateY(-10px);
+        text-shadow: 0 0 5px var(--main-color2), 0 0 10px var(--main-color2), 0 0 20px var(--main-color2), 0 0 40px var(--main-color2), 0 0 80px var(--main-color2);
+
+    }
+    50% {
+        color: var(--main-color1);
+        transform: translateY(0);
+        text-shadow: 0 0 5px var(--main-color1), 0 0 10px var(--main-color1), 0 0 20px var(--main-color1), 0 0 40px var(--main-color2), 0 0 80px var(--main-color2);
+
+    }
+    100% {
+        color: var(--main-color2);
+        transform: translateY(10px);
+        text-shadow: 0 0 5px var(--main-color2), 0 0 10px var(--main-color2), 0 0 20px var(--main-color2), 0 0 40px var(--main-color2), 0 0 80px var(--main-color2);
+    }
+}
+
 span {
-    font-size: 1.5rem;
+    animation: fadeInOut 2s infinite;
 }
 
 // on mobile, navigation is in the sidebar menu. normal on pc size
