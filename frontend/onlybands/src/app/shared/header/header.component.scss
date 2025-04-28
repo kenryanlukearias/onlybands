@@ -1,5 +1,5 @@
 .main {
-    height: 4.6rem;
+    height: 5rem;
     background-color: var(--secondary-color1);
     position: sticky;
 }
@@ -11,8 +11,6 @@
 li {
     margin: 2rem;  
     color: #ffffff;
-
-    
 }
 
 li:hover {
@@ -31,7 +29,6 @@ p {
 }
 
 .list {
-    display: flex;
     align-items: center;
     list-style: none;
 }
@@ -39,8 +36,8 @@ p {
 
 .button {
     display: flex;
-    height: 3rem;
-    width: 8rem;
+    height: 2.5rem;
+    width: 7rem;
     border-radius: 0.5rem;
     background-color: var(--main-color1);
     justify-content: center;
