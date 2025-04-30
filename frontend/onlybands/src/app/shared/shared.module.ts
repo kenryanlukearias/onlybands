@@ -2,19 +2,24 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { SharedRoutingModule } from './shared-routing.module';
-import { RouterLink, RouterLinkActive, RouterModule, RouterOutlet } from '@angular/router';
-import { LoginComponent } from '../register/login-page/login.component';
-
+import { RouterModule } from '@angular/router'; // Only import RouterModule
+import { HeaderComponent } from './header/header.component';
+import { DrawerComponent } from './drawer/drawer.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [
+  ],
   imports: [
     CommonModule,
     SharedRoutingModule,
-    RouterModule,
-    RouterOutlet,
-    RouterLink,
-    RouterLinkActive,
+    RouterModule, // Import RouterModule to use router directives
+    HeaderComponent, // Import standalone HeaderComponent
+    DrawerComponent
+
   ],
+  exports: [
+    HeaderComponent,
+    RouterModule // Export RouterModule if needed in other modules
+  ]
 })
 export class SharedModule { }

@@ -8,8 +8,8 @@ import { TutorsComponent } from './tutor-page/tutors.component';
 import { MusicComponent } from './music-sections/music.component';
 
 const routes: Routes = [
-  { path: 'landing', component: LandiingComponent },
-  { path: 'home', component: HomeComponent },
+  { path: 'home', component: LandiingComponent },
+  // { path: 'home', component: HomeComponent },
   { path: 'achievements', component: AchievementsComponent },
   { path: 'price', component: PricingComponent },
   { path: 'tutors', component: TutorsComponent },
