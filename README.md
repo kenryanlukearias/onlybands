@@ -17,3 +17,6 @@
 2. Make sure to create your own branch before doing anything
 3. Make sure to comment your code
 4. Feel free to make suggestions
+
+## Angular GUIDE
+1. Launching the project: ng serve -o
