@@ -1,0 +1,26 @@
+.main {
+    background-color: red;
+}
+
+
+h1 {
+    font-size: 4rem;
+}
+
+.register {
+    display: flex;
+    height: 2.5rem;
+    width: 7rem;
+    border-radius: 0.5rem;
+    background-color: var(--main-color2);
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: var(--secondary-color2);
+}
+
+.register:hover {
+    cursor: pointer;
+    background-color: var(--main-color1);
+    transition: background-color 0.3s ease-in-out;
+}

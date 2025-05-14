@@ -32,49 +32,6 @@
     <h3>Menu</h3>
     <button (click)="toggleDrawer()">✕</button>
   </div>
-  <ul class="drawer-content">
-
-    <!-- login and sign u button -->
-    <div class="buttons flex gap-3">
-        <div class="flex lg:hidden ">
-            <button class="button" routerLink="/login">Log In</button>
-        </div>
-        <div class="flex lg:hidden">
-            <button class="register" routerLink="/register">Sign up</button>
-        </div>  
-    </div>
-
-    <!-- menu options -->
-    <div>
-        <h1>Navigate</h1>
-        <li><a routerLink="/home">Home</a></li>
-        <li><a routerLink="/Achievements">Achievements</a></li>
-        <li><a routerLink="/tutors">Tutors</a></li>
-        <li><a routerLink="/lessons">Lessons</a></li>
-    </div>
-
-    <p class="spacer"></p>
-
-    <div>
-        <h1>Navigate</h1>
-        <li><a routerLink="/home">Home</a></li>
-        <li><a routerLink="/lessons">Lessons</a></li>
-        <li><a routerLink="/tutors">Tutors</a></li>
-        <li><a routerLink="/login">Login</a></li>
-    </div>
-
-    <p class="spacer"></p>
-    
-    <div>
-        <h1>Navigate</h1>
-        <li><a routerLink="/home">Home</a></li>
-        <li><a routerLink="/lessons">Lessons</a></li>
-        <li><a routerLink="/tutors">Tutors</a></li>
-        <li><a routerLink="/login">Login</a></li>
-    </div>
-  </ul>
+  <app-drawer></app-drawer>
 </div>
-
-<!-- Overlay -->
-<div class="overlay" *ngIf="isDrawerOpen" (click)="toggleDrawer()"></div>
 

@@ -6,6 +6,8 @@ import { AchievementsComponent } from './achievements-page/achievements.componen
 import { PricingComponent } from './price-page/pricing.component';
 import { TutorsComponent } from './tutor-page/tutors.component';
 import { MusicComponent } from './music-sections/music.component';
+import { LessonsPageComponent } from './lessons/lessons-page.component';
+
 
 const routes: Routes = [
   { path: 'home', component: LandiingComponent },
@@ -14,6 +16,7 @@ const routes: Routes = [
   { path: 'price', component: PricingComponent },
   { path: 'tutors', component: TutorsComponent },
   { path: 'music', component: MusicComponent },
+  { path: 'lessons', component: LessonsPageComponent }
 ];
 
 @NgModule({

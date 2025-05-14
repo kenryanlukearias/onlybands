@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { DrawerComponent } from "../drawer/drawer.component";
 
 
 @Component({
   selector: 'app-header',
-  imports: [RouterLink],
+  imports: [RouterLink, DrawerComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
