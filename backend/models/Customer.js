@@ -17,6 +17,8 @@ const CustomerSchema = new mongoose.Schema(
             type: String,
             required: true,
         },
+
+        // more can be added, depending on what we need
     }
 )
 
