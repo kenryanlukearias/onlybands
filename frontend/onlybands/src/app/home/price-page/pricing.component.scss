@@ -1,0 +1,84 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    font-size: 4rem;
+    background-color: var(--secondary-color1);
+    color: var(--secondary-color2);
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+span {
+    color: var(--main-color2);
+}
+
+span:hover {
+    cursor: pointer;
+    color: var(--main-color1);
+    transition: color 0.3s ease-in-out;
+}   
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card1 {
+    background-color: var(--secondary-color2);
+    width: 25rem;
+    height: 37.5rem;
+    color: var(--secondary-color1);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.money{
+    font-size: 150%;
+}
+
+.card1-header {
+    font-size: 2rem;
+    margin-top: 1rem;
+    background-color: var(--secondary-color1);
+}
+
+.card1-text {
+    font-size: 1rem;
+    margin-bottom: auto;
+}
+
+.card1 button {
+    margin-top: auto;
+    align-self: center;
+
+    width: 8rem;
+    height: 4rem;
+    background-color: var(--main-color1);
+    border-radius: 0.5rem;
+    color: var(--secondary-color2);
+    font-weight: bold;
+}
+
+.card1 p, h1, li, button {
+    background-color: var(--secondary-color2);
+    color: var(--secondary-color1);
+}
+
+.card2 p, h1, li, button {
+    background-color: var(--main-color1);
+    color: var(--secondary-color1);
+}

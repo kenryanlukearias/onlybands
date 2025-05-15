@@ -1,0 +1,20 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    height: 100vh;
+    background-color: red;
+}
+
+.child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+}
+
+p {
+    color: var(--text-color);
+}
