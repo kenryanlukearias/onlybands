@@ -5,12 +5,27 @@
     justify-content: center;
     width: 100%;
     height: 100%;
+    margin-top: 1rem;
 }
 
 .header {
     font-size: 4rem;
     background-color: var(--secondary-color1);
     color: var(--secondary-color2);
+
+    @media screen and (max-width: 768px) {
+        font-size: 2rem;
+        
+    }
+}
+
+.header-container > p {
+    @media screen and (max-width: 768px) {
+        font-size: 0.8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .header-container {
@@ -30,8 +45,6 @@ span:hover {
 }   
 
 .cards {
-    display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 2rem;
@@ -44,6 +57,11 @@ span:hover {
     color: var(--secondary-color1);
     border-radius: 1rem;
     padding: 2rem;
+
+    @media screen and (max-width: 768px) {
+        width: 90vw;
+        
+    }
 }
 
 .money{
@@ -59,6 +77,11 @@ span:hover {
 .card1-text {
     font-size: 1rem;
     margin-bottom: auto;
+
+        @media screen and (max-width: 768px) {
+        font-size: 0.7rem;
+        
+    }
 }
 
 .card1 button {
@@ -73,12 +96,76 @@ span:hover {
     font-weight: bold;
 }
 
-.card1 p, h1, li, button {
-    background-color: var(--secondary-color2);
-    color: var(--secondary-color1);
+.card1 button:hover {
+    cursor: pointer;
+    background-color: var(--main-color2);
+    transition: background-color 0.3s ease-in-out;
 }
 
-.card2 p, h1, li, button {
-    background-color: var(--main-color1);
+
+.card1-header > h1, .card1-header > p, .card1-text > p, .card1-list > li  {
+    background-color: var(--secondary-color2);
     color: var(--secondary-color1);
+    
 }
+
+.card2-header > h1, .card2-header > p, .card2-text > p, .card2-list > li  {
+    background-color: var(--main-color1);
+    color: var(--secondary-color2);
+}
+
+.card2 {
+    background-color: var(--main-color1);
+    width: 25rem;
+    height: 37.5rem;
+    color: var(--secondary-color1);
+    border-radius: 1rem;
+    padding: 2rem;
+
+    @media screen and (max-width: 768px) {
+        width: 90vw;
+    }
+}
+
+.card2-header {
+    font-size: 2rem;
+    margin-top: 1rem;
+    background-color: var(--secondary-color1);
+}
+
+.card2-text {
+    font-size: 1rem;
+    margin-bottom: auto;
+
+        @media screen and (max-width: 768px) {
+        font-size: 0.8rem;
+        
+    }
+}
+
+.card2 button {
+    margin-top: auto;
+    align-self: center;
+
+    width: 8rem;
+    height: 4rem;
+    background-color: var(--secondary-color2);
+    border-radius: 0.5rem;
+    color: var(--main-color1);
+    font-weight: bold;
+
+    
+}
+
+.card2 button:hover {
+    cursor: pointer;
+    background-color: var(--main-color2);
+    transition: background-color 0.3s ease-in-out;
+    color: var(--secondary-color2);
+}
+
+.footer {
+    align-self: center;
+}
+
+
