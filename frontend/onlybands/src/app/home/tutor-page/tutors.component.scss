@@ -39,6 +39,7 @@
 }
 
 .card:hover {
+    cursor: pointer;
     flex-grow: 1; // Grows
     filter: grayscale(0%);
     z-index: 2;
@@ -46,7 +47,7 @@
 
 .tutor-cards:hover .card:not(:hover) {
     flex-grow: 0.7; // Shrinks
-    filter: grayscale(50%);
+    filter: grayscale(100%);
     z-index: 1;
 }
 
