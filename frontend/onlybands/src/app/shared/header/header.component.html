@@ -2,13 +2,13 @@
     <div class="hero flex items-center justify-between w-full">
         <div class="logo flex items-center justify-center">
             <div>
-                <p><a class="flex-row" routerLink="/home">ONLY<span>BANDS</span></a></p>
+                <p ><a class="flex-row" [routerLink]="[]" fragment="home">ONLY<span>BANDS</span></a></p>
             </div>
             <div class="list hidden md:flex">
-                <li routerLink="/achievements">Achievements</li>
-                <li routerLink="/tutors">Tutors</li>
-                <li routerLink="/price">Pricings</li>
-                <li routerLink="/lessons">Lessons</li>
+                <li [routerLink]="[]" fragment="achievements">Achievements</li>
+                <li [routerLink]="[]" fragment="tutors">Tutors</li>
+                <li [routerLink]="[]" fragment="pricings">Pricings</li>
+                <li routerLink="lessons">Lessons</li>
             </div>
         </div>   
         <div class="flex items-center justify-center gap-10">
@@ -20,7 +20,6 @@
                     <button class="register" routerLink="/register">Sign up</button>
                 </div>  
             </div>
-
             <button> <svg nz-button (click)="toggleDrawer()" nzType="primary" class="menu" xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 24 24"><path fill="currentColor" d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z"/></svg>       </button>
         </div>
      </div>
