@@ -84,22 +84,9 @@ body {
 }
 
 .forgot-password {
-//     text-align: center;
-//     margin: 1.5rem 0 1.2rem; // Less vertical space
-//     color: #aaa;
-//     font-size: 1rem; // Smaller
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.checkbox {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem; // Less gap
-    margin-bottom: 1.2rem; // Less space below
-    font-size: 1rem; // Smaller
-    color: #ccc;
 }
 
 .forgot-password-text {
