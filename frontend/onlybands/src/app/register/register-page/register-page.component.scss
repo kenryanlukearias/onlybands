@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://i.imgur.com/GMTXlPh.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    height: 100vh;
+    padding-top: 12rem; // Reduced spacing
+    padding-right: 4rem; // Reduced spacing
+}
+
+.container {
+    max-width: 28rem; // Reduced width
+    width: 100%;
+    padding: 2rem; // Reduced padding
+}
+
+.title {
+    font-size: 2.5rem; // Smaller
+    font-weight: thin;
+    color: #00ffcc;
+    text-shadow: 0.15rem 0.15rem #ff00cc; // Slightly less pronounced shadow
+    margin-bottom: 1rem; // Less space below
+}
+
+.subtitle {
+    font-size: 1rem; // Smaller
+    color: #ccc;
+    margin-bottom: 1.2rem; // Less space below
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"] {
+    width: 100%;
+    padding: 0.75rem; // Less padding
+    margin-bottom: 1rem; // Less space between fields
+    border: 0.1rem solid #555; // Slightly thinner border
+    border-radius: 0.4rem; // Less rounded
+    background: transparent;
+    color: #fff;
+    font-size: 1rem; // Smaller text
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem; // Less gap
+    margin-bottom: 1.2rem; // Less space below
+    font-size: 1rem; // Smaller
+    color: #ccc;
+}
+
+.checkbox input {
+    accent-color: #00ffcc;
+    width: 1rem;
+    height: 1rem;
+}
+
+.signup-btn {
+    width: 40%; // Narrower button
+    padding: 0.7rem; // Less padding
+    border: none;
+    background-color: #00ffcc;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 0.6rem; // Less rounded
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 1rem; // Smaller text
+    margin: 0 auto;
+    display: block;
+}
+
+.signup-btn:hover {
+    background-color: #00e6b8;
+}
+
+.or {
+    text-align: center;
+    margin: 1.5rem 0 1.2rem; // Less vertical space
+    color: #aaa;
+    font-size: 1rem; // Smaller
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; // Less gap
+    font-size: 1.5rem; // Smaller icons
+}
+
+.social-icons i {
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.social-icons i:hover {
+    transform: scale(1.2); // Slightly smaller scale on hover
+}
