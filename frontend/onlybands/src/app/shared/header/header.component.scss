@@ -1,18 +1,20 @@
-
 .main {
     height: 5rem;
     position: fixed;
+    z-index: 900;
+    width: 100%;
+
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
 }
 
 .hero {
     padding-left: 4rem;
     padding-right: 4rem;
-
 }
 
 li {
     margin: 2rem;  
-    color: #ffffff;
+    color: var(--secondary-color2);
 }
 
 li:hover {

@@ -1,0 +1,41 @@
+<ul class="drawer-content">
+    <!-- login and sign up button -->
+    <div class="buttons flex gap-3">
+        <div class="flex lg:hidden ">
+            <button class="button" routerLink="/login">Log In</button>
+        </div>
+        <div class="flex lg:hidden">
+            <button class="register" routerLink="/register">Sign up</button>
+        </div>  
+    </div>
+
+    <div class="person flex gap-3">
+        <img class="pfp" src="https://i.imgur.com/ENTFYZX.png" alt="Makima">
+        <div>
+            <h1>John Doe</h1>
+            <p>Aspiring Beginner</p>
+        </div>
+    </div> 
+
+    <!-- 12 - 18  Will change when backend is done -->
+
+    <!-- menu options -->
+    <div>
+        <h1>Navigate</h1>
+        <li><a [routerLink]="[]" fragment="home">Home</a></li>
+        <li><a [routerLink]="[]" fragment="achievements">Achievements</a></li>
+        <li><a [routerLink]="[]" fragment="tutors">Tutors</a></li>
+        <li><a [routerLink]="[]" fragment="pricings">Pricings</a></li>
+        <li><a routerLink="/lessons">Lessons</a></li>
+    </div>
+
+    <p class="spacer"></p>
+
+    <div>
+        <h1>Settings</h1>
+        <li><a routerLink="/account">Account</a></li>
+        <li><a routerLink="/personalization">Personalization</a></li>
+        <li><a routerLink="/faq">FAQs</a></li>
+        <li><a routerLink="/report-issue">Report an Issue</a></li> 
+    </div>
+</ul>

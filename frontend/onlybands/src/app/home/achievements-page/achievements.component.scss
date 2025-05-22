@@ -3,8 +3,10 @@
     flex-direction: row;
     justify-content: center;
     width: auto;
-    height: 100vh;
-    background-color: red;
+    height: auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: var(--secondary-color1);
 }
 
 .child {
@@ -13,8 +15,33 @@
     align-items: center;
     justify-content: center;
     width: 75%;
+
+    @media screen and (max-width: 768px) {
+        width: 90%;
+        
+    }
+    
+}
+
+h1 {
+    font-size: large;
 }
 
 p {
     color: var(--text-color);
+}
+
+img {
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.desc > img {
+    width: 150rem;
+    height: 22.5rem;
+}
+
+.desc-text {
+    justify-content: center;
+    width: 100%;
 }

@@ -4,11 +4,18 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+    
+    background-image: url("https://i.imgur.com/9huabgi.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
 
 
     @media (width: 64rem) {
         height: 75vh;
     }
+
 }   
 
 .header {
@@ -16,7 +23,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 25rem;
+    width: 30rem;
 
     @media (max-width: 64rem) {
         width: 20rem;

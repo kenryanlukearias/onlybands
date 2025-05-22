@@ -7,10 +7,19 @@ import { MusicComponent } from '../music-sections/music.component';
 
 @Component({
   selector: 'app-landiing',
-  imports: [ HomeComponent,AchievementsComponent,PricingComponent,TutorsComponent,MusicComponent ],
+  standalone: true,
+  imports: [HomeComponent, AchievementsComponent, PricingComponent, TutorsComponent, MusicComponent],
   templateUrl: './landiing.component.html',
-  styleUrl: './landiing.component.scss'
+  styleUrls: ['./landiing.component.scss']
 })
 export class LandiingComponent {
-
+  
+  ngOnInit(): void {
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('preloader');
+      if (loader) {
+        loader.style.display = 'none';
+      }
+    });
+  }
 }
