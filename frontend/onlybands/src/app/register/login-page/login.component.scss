@@ -1,31 +1,30 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: #000;
-    color: white;
+.login-page {
     display: flex;
-    justify-content: right;
-    align-items: right;
-    height: 100vh;
-    padding-top: 12rem; // Reduced spacing
-    padding-right: 4rem; // Reduced spacing
+    justify-content: center;
+    align-items: center;
+    height: 100vh; // Full height
+    background-color: #000; // Dark background
+    background-image: url(); // Background image
+    // background-size: cover; // Cover the entire screen
+    // background-position: center; // Center the image
+    // background-attachment: fixed; // Fixed background         
+    // background-repeat: no-repeat; // No repeat
+    // filter: blur(0.5rem); // Slight blur effect
 }
 
 .container {
     max-width: 28rem; // Reduced width
     width: 100%;
-    padding: 2rem; // Reduced padding
+    height: 100vh; // Full height
+    padding: 16rem 7rem 4rem 0; // Top, right, bottom, left
+    margin-left: auto; // Pushes container to the right
+    margin-right: 0;
 }
 
 .title {
     font-size: 2.5rem; // Smaller
     font-weight: thin;
-    color: #00ffcc;
+    color: #00CC99;
     text-shadow: 0.15rem 0.15rem #ff00cc; // Slightly less pronounced shadow
     margin-bottom: 1rem; // Less space below
 }
