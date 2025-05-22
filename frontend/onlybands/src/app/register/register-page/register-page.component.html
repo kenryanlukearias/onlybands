@@ -1,29 +1,16 @@
-<div class=" flex justify-end items-center">
-    <div class="main flex flex-col gap-5">
-        <div class="">
-            <h1>Register</h1>
-            <p>Glad to see you join us!</p>
-        </div>
-        <form>
-            <div>
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <div>
-                <label for="confirm-password">Confirm Password:</label>
-                <input type="password" id="confirm-password" name="confirm-password" required>
-            </div>
-            <div class="">
-                <button class="register" routerLink="/register">Sign up</button>
-            </div> 
-        </form>
+
+    <div class="container">
+        <h1 class="title">Registration</h1>
+        <p class="subtitle">Glad to see you join us!</p>
+            <form class="form">
+                <input type="text" placeholder="Full Name" required />
+                <input type="email" placeholder="Email" required />
+                <input type="password" placeholder="Password" required />
+                <input type="password" placeholder="Confirm Password" required />
+                    <label class="checkbox">
+                        <input type="checkbox" required />
+                        <span>Terms and Conditions</span>
+                    </label>
+                    <button type="submit" class="signup-btn">Sign up</button>
+            </form>
     </div>
-</div>

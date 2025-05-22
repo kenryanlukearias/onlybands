@@ -1,13 +1,82 @@
-.main {
-    background-color: red;
+
+.container {
+    max-width: 28rem; // Reduced width
+    width: 100%;
+    height: 100vh;
+    padding: 14rem 7rem 4rem 0; // Top, right, bottom, left
+    margin-left: auto; // Pushes container to the right
+    margin-right: 0;
 }
 
-
-h1 {
-    font-size: 4rem;
+.title {
+    font-size: 2.5rem; // Smaller
+    font-weight: thin;
+    color: #00CC99;
+    text-shadow: 0.15rem 0.15rem #ff00cc; // Slightly less pronounced shadow
+    margin-bottom: 1rem; // Less space below
 }
 
-.register {
+.subtitle {
+    font-size: 1rem; // Smaller
+    color: #ccc;
+    margin-bottom: 1.2rem; // Less space below
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"] {
+    width: 100%;
+    padding: 0.75rem; // Less padding
+    margin-bottom: 1rem; // Less space between fields
+    border: 0.1rem solid #555; // Slightly thinner border
+    border-radius: 0.4rem; // Less rounded
+    background: transparent;
+    color: #fff;
+    font-size: 1rem; // Smaller text
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem; // Less gap
+    margin-bottom: 1.2rem; // Less space below
+    font-size: 1rem; // Smaller
+    color: #ccc;
+}
+
+.checkbox input {
+    accent-color: #00ffcc;
+    width: 1rem;
+    height: 1rem;
+}
+
+.signup-btn {
+    width: 40%; // Narrower button
+    padding: 0.7rem; // Less padding
+    border: none;
+    background-color: #00ffcc;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 0.6rem; // Less rounded
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 1rem; // Smaller text
+    margin: 0 auto;
+    display: block;
+}
+
+.signup-btn:hover {
+    background-color: #00e6b8;
+}
+
+.or {
+    text-align: center;
+    margin: 1.5rem 0 1.2rem; // Less vertical space
+    color: #aaa;
+    font-size: 1rem; // Smaller
+}
+
+.social-icons {
     display: flex;
     height: 2.5rem;
     width: 7rem;
