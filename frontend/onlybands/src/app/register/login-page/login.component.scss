@@ -2,14 +2,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; // Full height
-    background-color: #000; // Dark background
-    background-image: url(); // Background image
-    // background-size: cover; // Cover the entire screen
-    // background-position: center; // Center the image
-    // background-attachment: fixed; // Fixed background         
-    // background-repeat: no-repeat; // No repeat
-    // filter: blur(0.5rem); // Slight blur effect
+    height: 100vh;
+    background-color: #000; // Darker background
+    background-image: url(https://i.imgur.com/Z53vF6r.png); // Background image
+    background-size: cover; // Cover the entire screen
+    background-position: center; // Center the image
+    background-repeat: no-repeat; // No repeat
+    background-attachment: fixed; // Fixed background
+    background-position-y: 100%;
 }
 
 .container {

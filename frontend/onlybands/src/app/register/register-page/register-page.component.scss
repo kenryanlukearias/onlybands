@@ -1,4 +1,17 @@
-
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; // Darker background
+    background-image: url(https://i.imgur.com/Z53vF6r.png); // Background image
+    background-size: cover; // Cover the entire screen
+    background-position: center; // Center the image
+    background-repeat: no-repeat; // No repeat
+    background-attachment: fixed; // Fixed background
+    background-position-y: 100%;
+    
+}
 .container {
     max-width: 28rem; // Reduced width
     width: 100%;
