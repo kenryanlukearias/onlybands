@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html'
-})
+    imports: [FormsModule],
+  templateUrl: './login.component.html',
+  styleUrl: './login.component.scss',
+  selector: 'app-login'})
 export class LoginComponent {
   username = '';
   password = '';
@@ -12,7 +14,7 @@ export class LoginComponent {
   constructor(private http: HttpClient) {}
 
   onLogin() {
-    this.http.post('http://localhost:4200/api/customers/login', {
+    this.http.post('http://localhost:3000/api/customers/login', {
       username: this.username,
       password: this.password
     }).subscribe({
