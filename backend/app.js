@@ -32,8 +32,7 @@ main().catch((error) => console.log(error));
 
 async function main() {
     // prepare connection string
-    const connectionString = "mongodb+srv://studyholicprocrastinator:LY054Tho2dvCnPEC@cluster0.eat16.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+    const connectionString = "mongodb+srv://josereypinez:iBrkuLG26up4vcFM@cluster0.tek5hzc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
     await mongoose.connect(connectionString);
     mongoose.set('strictQuery', true);
 }
-

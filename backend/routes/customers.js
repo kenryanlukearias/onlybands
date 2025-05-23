@@ -1,6 +1,49 @@
+require('dotenv').config();
 const express = require('express');
+const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
 const router = express.Router();
 const Customer = require('../models/Customer');
+
+const JWT_SECRET = process.env.JWT_SECRET;
+
+function authenticateToken(req, res, next) {
+    const authHeader = req.headers['authorization'];
+    const token = authHeader && authHeader.split(' ')[1];
+    if (!token) return res.sendStatus(401);
+
+    jwt.verify(token, JWT_SECRET, (err, Customer) => {
+        if (err) return res.sendStatus(403);
+        req.Customer = Customer;
+        next();
+    });
+}   
+
+router.post('/register', async (req, res) => {
+    const { username, password } = req.body;
+    try {
+        const hashedPassword = await bcrypt.hash(password, 10);
+        const user = new Customer({ username, password: hashedPassword });
+        await Customer.save();
+        res.status(201).json({ message: 'User registered' });
+    } catch (err) {
+        res.status(400).json({ error: 'Username already exists' });
+    }
+});
+
+router.post('/login', async (req, res) => {
+    const { username, password } = req.body;
+    const user = await Customer.findOne({ username });
+    if (!user) return res.status(401).json({ error: 'Invalid credentials' });
+
+    const isMatch = await bcrypt.compare(password, user.password);
+    if (!isMatch) return res.status(401).json({ error: 'Invalid credentials' });
+
+    const token = jwt.sign({ userId: user._id }, JWT_SECRET, { expiresIn: '1h' });
+    res.json({ token });
+});
+
+router.use(authenticateToken);
 
 // GET: list
 router.get('/', async (req, res) => {
