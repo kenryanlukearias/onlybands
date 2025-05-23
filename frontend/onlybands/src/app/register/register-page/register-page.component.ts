@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './register-page.component.scss'
 })
 export class RegisterPageComponent {
-
+  goToHome() {
+    window.location.href = '/home';
+  }
 }

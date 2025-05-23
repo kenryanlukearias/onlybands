@@ -9,5 +9,7 @@ import { FooterComponent } from '../../shared/footer/footer.component';
   styleUrl: './login.component.scss'
 })
 export class LoginComponent {
-
+  goToHome() {
+    window.location.href = '/home';
+  }
 }

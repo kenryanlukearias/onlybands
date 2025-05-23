@@ -3,22 +3,48 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+
     background-color: #000; // Darker background
     background-image: url(https://i.imgur.com/Z53vF6r.png); // Background image
     background-size: cover; // Cover the entire screen
     background-position: center; // Center the image
-    background-repeat: no-repeat; // No repeat
-    background-attachment: fixed; // Fixed background
-    background-position-y: 100%;
+
+    @media screen and (max-width: 768px) {
+        background-color: black;
+        background-image: none;
+    }
+}
+
+.hero {
+    display: flex;
+    width: 33.125rem; // Smaller width
+    margin-left: auto;
+
+    @media screen and (max-width: 768px) {
+        margin-left: 0;
+        justify-content: center;
+    }
 }
 
 .container {
-    max-width: 28rem; // Reduced width
-    width: 100%;
-    height: 100vh; // Full height
-    padding: 16rem 7rem 4rem 0; // Top, right, bottom, left
-    margin-left: auto; // Pushes container to the right
-    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 31.25rem;
+    
+    @media screen and (max-width: 768px) {
+        width: 15rem;
+    }
+}
+
+.child-container {
+    display: flex;
+    flex-direction: column;
+    width: 31.25rem;
+
+    @media screen and (max-width: 768px) {
+        width: 15rem;
+    }
 }
 
 .title {
@@ -27,6 +53,8 @@
     color: #00CC99;
     text-shadow: 0.15rem 0.15rem #ff00cc; // Slightly less pronounced shadow
     margin-bottom: 1rem; // Less space below
+
+    
 }
 
 .subtitle {
@@ -46,7 +74,9 @@
     background: transparent;
     color: #fff;
     font-size: 1rem; // Smaller text
+
 }
+
 
 .checkbox {
     display: flex;
