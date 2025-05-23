@@ -1,9 +1,15 @@
+
+
 .child1 , .child2, .child3, .child4 {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     padding: 0.5rem;
     list-style: none;
+
+    @media screen and (max-width: 768px) {
+        margin: 0;
+    }
 }
 
 li {
@@ -21,6 +27,10 @@ p {
     font-size: 1.5rem;
     text-align: center;
     font-weight: bold;
+
+       @media screen and (max-width: 768px) {
+        text-align: left;
+    }
 }
 
 .footer {
@@ -32,4 +42,15 @@ p {
     background-color: var(--secondary-color1);
     z-index: 10;
 
+       @media screen and (max-width: 768px) {
+        height: 38rem;
+    }
+
+   
+}
+
+.parent {
+     @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
 }

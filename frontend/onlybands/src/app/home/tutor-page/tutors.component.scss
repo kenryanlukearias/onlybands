@@ -5,9 +5,15 @@
 }
 
 .text {
+    display: block;
     justify-self: center;
     width: 35%;
     text-align: center;
+
+    @media screen and (max-width: 768px) {
+        width: 80%;
+        
+    }
 }
 
 .text2 {
