@@ -12,19 +12,19 @@ function authenticateToken(req, res, next) {
     const token = authHeader && authHeader.split(' ')[1];
     if (!token) return res.sendStatus(401);
 
-    jwt.verify(token, JWT_SECRET, (err, Customer) => {
+    jwt.verify(token, JWT_SECRET, (err, payload) => {
         if (err) return res.sendStatus(403);
-        req.Customer = Customer;
+        req.user = payload;
         next();
     });
 }   
 
 router.post('/register', async (req, res) => {
-    const { username, password } = req.body;
+    const { name, email, phone, username, password } = req.body;
     try {
         const hashedPassword = await bcrypt.hash(password, 10);
-        const user = new Customer({ username, password: hashedPassword });
-        await Customer.save();
+        const user = new Customer({ name, email, phone, username, password: hashedPassword });
+        await user.save();
         res.status(201).json({ message: 'User registered' });
     } catch (err) {
         res.status(400).json({ error: 'Username already exists' });
@@ -72,12 +72,12 @@ router.get('/:id', async (req, res) => {
 router.post('/', async (req, res) => {
     try {
         const customer = new Customer(req.body);
-        const savedCustomer = customer.save();
+        const savedCustomer = await customer.save();
 
         res.status(200).json(savedCustomer);
     }
     catch (error) {
-        res.status(500).json({ message: "AN error occured:", error: error });
+        res.status(500).json({ message: "An error occured:", error: error });
     }
 });
 
@@ -114,7 +114,7 @@ router.delete('/:id', async (req, res) => {
         res.status(200).json(deletedCustomer);
     }
     catch (error) {
-        res.status(500).json({ message: "AN error occured:", error: error });
+        res.status(500).json({ message: "An error occured:", error: error });
     }
 });
 
