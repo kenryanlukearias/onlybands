@@ -2,17 +2,16 @@
     <div class="container">
         <h1 class="title">Registration</h1>
         <p class="subtitle">Glad to see you join us!</p>
-        <form class="form" (ngSubmit)="onRegister()" #registerForm="ngForm">
-            <input type="text" placeholder="Full Name" required [(ngModel)]="name" name="name" />
-            <input type="email" placeholder="Email" required [(ngModel)]="email" name="email" />
-            <input type="text" placeholder="Username" required [(ngModel)]="username" name="username" />
-            <input type="password" placeholder="Password" required [(ngModel)]="password" name="password" />
-            <input type="password" placeholder="Confirm Password" required [(ngModel)]="confirmPassword" name="confirmPassword" />
-            <label class="checkbox">
-                <input type="checkbox" required [(ngModel)]="terms" name="terms" />
-                <span>Terms and Conditions</span>
-            </label>
-            <button type="submit" class="signup-btn">Sign up</button>
-        </form>
+            <form class="form">
+                <input type="text" placeholder="Full Name" required />
+                <input type="email" placeholder="Email" required />
+                <input type="password" placeholder="Password" required />
+                <input type="password" placeholder="Confirm Password" required />
+                    <label class="checkbox">
+                        <input type="checkbox" required />
+                        <span>Terms and Conditions</span>
+                    </label>
+                    <button type="submit" class="signup-btn">Sign up</button>
+            </form>
     </div>
 </div>

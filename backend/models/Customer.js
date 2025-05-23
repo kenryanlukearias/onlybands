@@ -15,7 +15,7 @@ const CustomerSchema = new mongoose.Schema(
         },
         phone: {
             type: String,
-            required: false,
+            required: true,
         },
         username: { 
             type: String, 
