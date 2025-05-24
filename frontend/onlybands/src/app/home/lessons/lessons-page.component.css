@@ -1,11 +1,11 @@
-#lessons-page{
-    background-color: black;
-    padding-top: 5rem;  /* push content down safely */
+#lessons-page {
+  background-color: black;
+  padding-top: 5rem; /* push content down safely */
 }
 
 .search-bar {
   display: block;
-  margin: 0 auto 2rem;  /* center horizontally and add bottom space */
+  margin: 0 auto 2rem; /* center horizontally and add bottom space */
   width: 30%;
   padding: 0.5rem;
   border-radius: 8px;
@@ -16,8 +16,6 @@
   background-color: transparent; /* no fill */
   border: 2px solid #888; /* border color */
 }
-
-
 
 .menu-icon {
   font-size: 1.5rem;
@@ -33,7 +31,7 @@
   width: 100%;
   max-width: 800px;
   height: 450px;
-  background: repeating-conic-gradient(#ccc 0% 25%, #eee 0% 50%) 50% / 40px 40px;
+  background: repeating-conic-gradient(#ccc 0% 25%, #eee 0% 50%) 50%/40px 40px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -63,15 +61,15 @@
 }
 
 .video-info .buttons button.download {
-  background-color: #d3cc008b;
+  background-color: rgba(211, 204, 0, 0.5450980392);
 }
 
 .video-info .buttons button.favorite {
-  background-color: #00cc9998;
+  background-color: rgba(0, 204, 153, 0.5960784314);
 }
 
 .video-info .buttons button.report {
-  background-color: #aa115690;
+  background-color: rgba(170, 17, 86, 0.5647058824);
   color: white;
 }
 
@@ -109,20 +107,20 @@
 }
 
 .featured-card {
-    min-width: 300px;
-    min-height: 350px;
-    background-color: #111;
-    padding: 2rem;
-    border-radius: 16px;
-    text-align: center;
-    flex-shrink: 0;
-    font-size: 1.25rem;
+  min-width: 300px;
+  min-height: 350px;
+  background-color: #111;
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  flex-shrink: 0;
+  font-size: 1.25rem;
 }
 
 .image-placeholder {
   width: 100%;
   height: 150px;
-  background: repeating-conic-gradient(#ccc 0% 25%, #eee 0% 50%) 50% / 40px 40px;
+  background: repeating-conic-gradient(#ccc 0% 25%, #eee 0% 50%) 50%/40px 40px;
   border-radius: 8px;
   margin-bottom: 0.5rem;
 }
@@ -131,4 +129,4 @@
   margin: 0.25rem 0;
   font-size: 0.9rem;
   color: #ccc;
-}
+}/*# sourceMappingURL=lessons-page.component.css.map */

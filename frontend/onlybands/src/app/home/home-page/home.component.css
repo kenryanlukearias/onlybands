@@ -1,0 +1,63 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("https://i.imgur.com/9huabgi.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+}
+@media (width: 64rem) {
+  .main {
+    height: 75vh;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 30rem;
+}
+@media (max-width: 64rem) {
+  .header {
+    width: 20rem;
+    padding: 1rem;
+  }
+}
+
+.span1 {
+  color: var(--main-color1);
+}
+
+.span2 {
+  color: var(--main-color2);
+}
+
+.span3 {
+  font-weight: 700;
+}
+
+.paragraph {
+  width: 21rem;
+  text-align: center;
+}
+@media (max-width: 64rem) {
+  .paragraph {
+    width: 15rem;
+  }
+}
+
+.paragraph p {
+  color: var(--text-color);
+}
+
+button:hover {
+  cursor: pointer;
+  color: var(--main-color1);
+  transition: color 0.3s ease-in-out;
+}/*# sourceMappingURL=home.component.css.map */

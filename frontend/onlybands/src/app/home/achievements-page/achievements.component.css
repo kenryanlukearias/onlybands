@@ -1,0 +1,47 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: var(--secondary-color1);
+}
+
+.child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+}
+@media screen and (max-width: 768px) {
+  .child {
+    width: 90%;
+  }
+}
+
+h1 {
+  font-size: large;
+}
+
+p {
+  color: var(--text-color);
+}
+
+img {
+  border-radius: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.desc > img {
+  width: 150rem;
+  height: 22.5rem;
+}
+
+.desc-text {
+  justify-content: center;
+  width: 100%;
+}/*# sourceMappingURL=achievements.component.css.map */
